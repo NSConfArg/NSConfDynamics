@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61893BFB1C92423D0003C768 /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893BFA1C92423D0003C768 /* GravityViewController.m */; };
+		61893BFE1C9243360003C768 /* DynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893BFD1C9243360003C768 /* DynamicsViewController.m */; };
+		61893C021C9246440003C768 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893C011C9246440003C768 /* MainViewController.m */; };
+		61893C061C926AAC0003C768 /* SnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893C051C926AAC0003C768 /* SnapViewController.m */; };
 		61FF6DC51C923FD3005C0DC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FF6DC41C923FD3005C0DC5 /* main.m */; };
 		61FF6DC81C923FD3005C0DC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FF6DC71C923FD3005C0DC5 /* AppDelegate.m */; };
-		61FF6DCB1C923FD3005C0DC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FF6DCA1C923FD3005C0DC5 /* ViewController.m */; };
 		61FF6DCE1C923FD3005C0DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FF6DCC1C923FD3005C0DC5 /* Main.storyboard */; };
 		61FF6DD01C923FD3005C0DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61FF6DCF1C923FD3005C0DC5 /* Assets.xcassets */; };
 		61FF6DD31C923FD3005C0DC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FF6DD11C923FD3005C0DC5 /* LaunchScreen.storyboard */; };
@@ -35,12 +38,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61893BF91C92423D0003C768 /* GravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravityViewController.h; path = ViewControllers/Gravity/GravityViewController.h; sourceTree = "<group>"; };
+		61893BFA1C92423D0003C768 /* GravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GravityViewController.m; path = ViewControllers/Gravity/GravityViewController.m; sourceTree = "<group>"; };
+		61893BFC1C9243360003C768 /* DynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicsViewController.h; path = ViewControllers/DynamicsViewController.h; sourceTree = "<group>"; };
+		61893BFD1C9243360003C768 /* DynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicsViewController.m; path = ViewControllers/DynamicsViewController.m; sourceTree = "<group>"; };
+		61893C001C9246440003C768 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ViewControllers/Main/MainViewController.h; sourceTree = "<group>"; };
+		61893C011C9246440003C768 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewControllers/Main/MainViewController.m; sourceTree = "<group>"; };
+		61893C041C926AAC0003C768 /* SnapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnapViewController.h; path = ViewControllers/Snap/SnapViewController.h; sourceTree = "<group>"; };
+		61893C051C926AAC0003C768 /* SnapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnapViewController.m; path = ViewControllers/Snap/SnapViewController.m; sourceTree = "<group>"; };
 		61FF6DC01C923FD3005C0DC5 /* NSConfDynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSConfDynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FF6DC41C923FD3005C0DC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61FF6DC61C923FD3005C0DC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		61FF6DC71C923FD3005C0DC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		61FF6DC91C923FD3005C0DC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		61FF6DCA1C923FD3005C0DC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		61FF6DCD1C923FD3005C0DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61FF6DCF1C923FD3005C0DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61FF6DD21C923FD3005C0DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +87,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61893BF71C9241FB0003C768 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				61893C031C9269A50003C768 /* Snap */,
+				61893BFF1C9246220003C768 /* Main */,
+				61893BF81C92420C0003C768 /* Gravity */,
+				61893BFC1C9243360003C768 /* DynamicsViewController.h */,
+				61893BFD1C9243360003C768 /* DynamicsViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		61893BF81C92420C0003C768 /* Gravity */ = {
+			isa = PBXGroup;
+			children = (
+				61893BF91C92423D0003C768 /* GravityViewController.h */,
+				61893BFA1C92423D0003C768 /* GravityViewController.m */,
+			);
+			name = Gravity;
+			sourceTree = "<group>";
+		};
+		61893BFF1C9246220003C768 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				61893C001C9246440003C768 /* MainViewController.h */,
+				61893C011C9246440003C768 /* MainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		61893C031C9269A50003C768 /* Snap */ = {
+			isa = PBXGroup;
+			children = (
+				61893C041C926AAC0003C768 /* SnapViewController.h */,
+				61893C051C926AAC0003C768 /* SnapViewController.m */,
+			);
+			name = Snap;
+			sourceTree = "<group>";
+		};
 		61FF6DB71C923FD3005C0DC5 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +149,9 @@
 		61FF6DC21C923FD3005C0DC5 /* NSConfDynamics */ = {
 			isa = PBXGroup;
 			children = (
+				61893BF71C9241FB0003C768 /* ViewControllers */,
 				61FF6DC61C923FD3005C0DC5 /* AppDelegate.h */,
 				61FF6DC71C923FD3005C0DC5 /* AppDelegate.m */,
-				61FF6DC91C923FD3005C0DC5 /* ViewController.h */,
-				61FF6DCA1C923FD3005C0DC5 /* ViewController.m */,
 				61FF6DCC1C923FD3005C0DC5 /* Main.storyboard */,
 				61FF6DCF1C923FD3005C0DC5 /* Assets.xcassets */,
 				61FF6DD11C923FD3005C0DC5 /* LaunchScreen.storyboard */,
@@ -207,6 +254,7 @@
 				TargetAttributes = {
 					61FF6DBF1C923FD3005C0DC5 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = B8V2E9874H;
 					};
 					61FF6DD81C923FD3005C0DC5 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -270,9 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61FF6DCB1C923FD3005C0DC5 /* ViewController.m in Sources */,
+				61893C021C9246440003C768 /* MainViewController.m in Sources */,
+				61893BFE1C9243360003C768 /* DynamicsViewController.m in Sources */,
 				61FF6DC81C923FD3005C0DC5 /* AppDelegate.m in Sources */,
 				61FF6DC51C923FD3005C0DC5 /* main.m in Sources */,
+				61893C061C926AAC0003C768 /* SnapViewController.m in Sources */,
+				61893BFB1C92423D0003C768 /* GravityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +464,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NSConfDynamics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmato.NSConfDynamics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +478,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NSConfDynamics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmato.NSConfDynamics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +555,7 @@
 				61FF6DEF1C923FD3005C0DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61FF6DF01C923FD3005C0DC5 /* Build configuration list for PBXNativeTarget "NSConfDynamicsTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +564,7 @@
 				61FF6DF21C923FD3005C0DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61FF6DF31C923FD3005C0DC5 /* Build configuration list for PBXNativeTarget "NSConfDynamicsUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +573,7 @@
 				61FF6DF51C923FD3005C0DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

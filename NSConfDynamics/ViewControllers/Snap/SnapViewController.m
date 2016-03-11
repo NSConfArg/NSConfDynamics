@@ -1,22 +1,18 @@
 //
-//  ViewController.m
+//  SnapViewController.m
 //  NSConfDynamics
 //
 //  Created by Rodrigo Mato on 3/10/16.
 //  Copyright © 2016 RodrigoMato. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SnapViewController.h"
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
+@implementation SnapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    //    [self setConfLogoOnNavBar];
 }
 
 - (void)didReceiveMemoryWarning {
