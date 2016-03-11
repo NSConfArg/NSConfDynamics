@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NSConfDynamics/ViewControllers/Main/MainViewController.m"
-            timestampString = "479402427.144459"
+            timestampString = "479403779.966576"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "-createItems"
             landmarkType = "5">
          </BreakpointContent>

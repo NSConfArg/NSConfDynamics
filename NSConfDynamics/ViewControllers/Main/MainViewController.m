@@ -13,6 +13,7 @@
 @property (nonatomic, strong) UIFieldBehavior *fieldBehaviour;
 @property (nonatomic, strong) UICollisionBehavior *collisionBehaviour;
 @property (nonatomic, strong) UIPushBehavior *pushBehaviour;
+@property (weak, nonatomic) IBOutlet UIButton *pushButton;
 
 @end
 
@@ -20,17 +21,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self setConfLogoOnNavBar];
     
     // Add Behaviours
     for (UIDynamicBehavior *behaviour in self.behaviours) {
         [self.animator addBehavior:behaviour];
     }
+    [self configUIElements];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)configUIElements {
+    
+    [self.view bringSubviewToFront:self.pushButton];
+    
+    self.pushButton.layer.borderWidth = 2;
+    self.pushButton.layer.cornerRadius = self.pushButton.frame.size.width/2;
+    self.pushButton.layer.borderColor = [self.pushButton.tintColor CGColor];
 }
 
 - (void)setConfLogoOnNavBar {
@@ -44,13 +54,16 @@
 
 #pragma mark - Dynamics
 
+/**
+ *  Create all behaviours to be added to the animator
+ */
 - (void)createBehaviours {
     
     // Field Behaviour
     self.fieldBehaviour = [UIFieldBehavior noiseFieldWithSmoothness:0.4 animationSpeed:0.2];
     self.fieldBehaviour.position = self.view.center;
     self.fieldBehaviour.region = [UIRegion infiniteRegion];
-    self.fieldBehaviour.strength = 0.8;
+    self.fieldBehaviour.strength = 0.7;
     [self.behaviours addObject:self.fieldBehaviour];
     for (UIView *view in self.items) {
         [self.fieldBehaviour addItem:view];
@@ -68,6 +81,9 @@
 
 }
 
+/**
+ *  Add instantaneous push forces to each view item
+ */
 - (void)addPushBehaviours {
     
     for (UIView *view in self.items) {
@@ -79,7 +95,9 @@
     }
 }
 
-
+/**
+ *  Create X new items at random positions within bounds
+ */
 - (void)createItems {
     
     CGSize localSize = self.view.bounds.size;

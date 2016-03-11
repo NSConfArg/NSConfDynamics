@@ -32,13 +32,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGl-fJ-SnI">
-                                <rect key="frame" x="256" y="482" width="88" height="46"/>
+                                <rect key="frame" x="256" y="448" width="88" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="W7T-hw-F85"/>
-                                    <constraint firstAttribute="height" constant="46" id="lJa-Zy-Ver"/>
+                                    <constraint firstAttribute="height" constant="88" id="lJa-Zy-Ver"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="PUSH"/>
+                                <color key="tintColor" red="0.80784313730000001" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="PUSH">
+                                    <color key="titleColor" red="0.80784313725490198" green="0.20000000000000001" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="pushPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N4h-ry-i5D"/>
                                 </connections>
@@ -48,12 +51,15 @@
                         <constraints>
                             <constraint firstItem="Aat-Vz-K2D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="EmO-GC-czc"/>
                             <constraint firstItem="QGl-fJ-SnI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SKu-oR-Zdh"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QGl-fJ-SnI" secondAttribute="bottom" constant="8" id="bfC-YL-vES"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QGl-fJ-SnI" secondAttribute="bottom" id="bfC-YL-vES"/>
                             <constraint firstItem="Aat-Vz-K2D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dtj-SW-d91"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="NSConfDynamics" id="bfi-JS-8Pp"/>
+                    <connections>
+                        <outlet property="pushButton" destination="QGl-fJ-SnI" id="bIH-rO-3ne"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
