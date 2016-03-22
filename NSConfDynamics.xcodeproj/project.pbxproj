@@ -14,6 +14,9 @@
 		61893C021C9246440003C768 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893C011C9246440003C768 /* MainViewController.m */; };
 		61893C061C926AAC0003C768 /* SnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893C051C926AAC0003C768 /* SnapViewController.m */; };
 		61E548F51CA1A53D0028A127 /* AttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E548F41CA1A53D0028A127 /* AttachmentViewController.m */; };
+		61E548FA1CA1CC3A0028A127 /* SpringBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E548F91CA1CC3A0028A127 /* SpringBehaviour.m */; };
+		61E548FE1CA1CD140028A127 /* CustomAttachmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E548FD1CA1CD140028A127 /* CustomAttachmentController.m */; };
+		61E549011CA1D7680028A127 /* DrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E549001CA1D7680028A127 /* DrawTool.m */; };
 		61FF6DC51C923FD3005C0DC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FF6DC41C923FD3005C0DC5 /* main.m */; };
 		61FF6DC81C923FD3005C0DC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FF6DC71C923FD3005C0DC5 /* AppDelegate.m */; };
 		61FF6DCE1C923FD3005C0DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FF6DCC1C923FD3005C0DC5 /* Main.storyboard */; };
@@ -55,6 +58,12 @@
 		61893C051C926AAC0003C768 /* SnapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnapViewController.m; path = ViewControllers/Snap/SnapViewController.m; sourceTree = "<group>"; };
 		61E548F31CA1A53D0028A127 /* AttachmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentViewController.h; path = ViewControllers/Attachment/AttachmentViewController.h; sourceTree = "<group>"; };
 		61E548F41CA1A53D0028A127 /* AttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttachmentViewController.m; path = ViewControllers/Attachment/AttachmentViewController.m; sourceTree = "<group>"; };
+		61E548F81CA1CC3A0028A127 /* SpringBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringBehaviour.h; path = CustomBehaviours/Spring/SpringBehaviour.h; sourceTree = "<group>"; };
+		61E548F91CA1CC3A0028A127 /* SpringBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpringBehaviour.m; path = CustomBehaviours/Spring/SpringBehaviour.m; sourceTree = "<group>"; };
+		61E548FC1CA1CD140028A127 /* CustomAttachmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomAttachmentController.h; path = ViewControllers/CustomAttachment/CustomAttachmentController.h; sourceTree = "<group>"; };
+		61E548FD1CA1CD140028A127 /* CustomAttachmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomAttachmentController.m; path = ViewControllers/CustomAttachment/CustomAttachmentController.m; sourceTree = "<group>"; };
+		61E548FF1CA1D7680028A127 /* DrawTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawTool.h; path = Model/DrawTool.h; sourceTree = "<group>"; };
+		61E549001CA1D7680028A127 /* DrawTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawTool.m; path = Model/DrawTool.m; sourceTree = "<group>"; };
 		61FF6DC01C923FD3005C0DC5 /* NSConfDynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSConfDynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FF6DC41C923FD3005C0DC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61FF6DC61C923FD3005C0DC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +126,7 @@
 		61893BF71C9241FB0003C768 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				61E548FB1CA1CCF00028A127 /* CustomAtachment */,
 				61E548F21CA1A2FA0028A127 /* Attachments */,
 				61196ED11CA108300058F0FE /* BaseContainer */,
 				61196ED01CA108200058F0FE /* Menu */,
@@ -165,6 +175,32 @@
 			name = Attachments;
 			sourceTree = "<group>";
 		};
+		61E548F61CA1CC060028A127 /* CustomBehaviours */ = {
+			isa = PBXGroup;
+			children = (
+				61E548F71CA1CC1A0028A127 /* Spring */,
+			);
+			name = CustomBehaviours;
+			sourceTree = "<group>";
+		};
+		61E548F71CA1CC1A0028A127 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				61E548F81CA1CC3A0028A127 /* SpringBehaviour.h */,
+				61E548F91CA1CC3A0028A127 /* SpringBehaviour.m */,
+			);
+			name = Spring;
+			sourceTree = "<group>";
+		};
+		61E548FB1CA1CCF00028A127 /* CustomAtachment */ = {
+			isa = PBXGroup;
+			children = (
+				61E548FC1CA1CD140028A127 /* CustomAttachmentController.h */,
+				61E548FD1CA1CD140028A127 /* CustomAttachmentController.m */,
+			);
+			name = CustomAtachment;
+			sourceTree = "<group>";
+		};
 		61FF6DB71C923FD3005C0DC5 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +224,7 @@
 		61FF6DC21C923FD3005C0DC5 /* NSConfDynamics */ = {
 			isa = PBXGroup;
 			children = (
+				61E548F61CA1CC060028A127 /* CustomBehaviours */,
 				61893BF71C9241FB0003C768 /* ViewControllers */,
 				61FF6DC61C923FD3005C0DC5 /* AppDelegate.h */,
 				61FF6DC71C923FD3005C0DC5 /* AppDelegate.m */,
@@ -196,6 +233,8 @@
 				61FF6DD11C923FD3005C0DC5 /* LaunchScreen.storyboard */,
 				61FF6DD41C923FD3005C0DC5 /* Info.plist */,
 				61FF6DC31C923FD3005C0DC5 /* Supporting Files */,
+				61E548FF1CA1D7680028A127 /* DrawTool.h */,
+				61E549001CA1D7680028A127 /* DrawTool.m */,
 			);
 			path = NSConfDynamics;
 			sourceTree = "<group>";
@@ -357,13 +396,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E548FE1CA1CD140028A127 /* CustomAttachmentController.m in Sources */,
 				61893C021C9246440003C768 /* MainViewController.m in Sources */,
 				61196ED71CA108B50058F0FE /* MenuViewController.m in Sources */,
+				61E548FA1CA1CC3A0028A127 /* SpringBehaviour.m in Sources */,
 				61893BFE1C9243360003C768 /* DynamicsViewController.m in Sources */,
 				61FF6DC81C923FD3005C0DC5 /* AppDelegate.m in Sources */,
 				61FF6DC51C923FD3005C0DC5 /* main.m in Sources */,
 				61893C061C926AAC0003C768 /* SnapViewController.m in Sources */,
 				61196ED41CA1089D0058F0FE /* BaseContainerViewController.m in Sources */,
+				61E549011CA1D7680028A127 /* DrawTool.m in Sources */,
 				61893BFB1C92423D0003C768 /* GravityViewController.m in Sources */,
 				61E548F51CA1A53D0028A127 /* AttachmentViewController.m in Sources */,
 			);

@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 #import "BaseContainerViewController.h"
-#define MENU_WIDTH      180
+#define MENU_WIDTH      210
 #define GESTURE_MARGIN  30
 
 
@@ -39,7 +39,7 @@
     
     self = [super initWithCoder:aDecoder];
     if (self) {
-        menuSegues = @[@"gravityControllerSegue", @"attachmentControllerSegue", @"gravityControllerSegue", @"gravityControllerSegue"];
+        menuSegues = @[@"gravityControllerSegue", @"attachmentControllerSegue", @"snapControllerSegue", @"customBehaviour1Segue"];
     }
     return self;
 }

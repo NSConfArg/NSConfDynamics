@@ -7,6 +7,7 @@
 //
 
 #define ACTIVE_GRAVITY  0
+#import "DrawTool.h"
 #import "AttachmentViewController.h"
 
 @interface AttachmentViewController ()
@@ -68,17 +69,10 @@
 
     // Collisions
     self.collisionBehavior = [[UICollisionBehavior alloc] initWithItems:self.items];
-//    self.collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
     [self.collisionBehavior addBoundaryWithIdentifier:@"VerticalMin"
                                             fromPoint:CGPointMake(0, CGRectGetHeight(self.view.frame))
                                               toPoint:CGPointMake(CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
-//    [self.collisionBehaviour addBoundaryWithIdentifier("verticalMin", fromPoint: CGPointMake(0, 0), toPoint: CGPointMake(CGRectGetMaxX(view.frame), 0))
     [self.animator addBehavior:self.collisionBehavior];
-//
-//    // Dynamic Items (properties)
-//    self.dynamicItemBehaviour = [[UIDynamicItemBehavior alloc] initWithItems:self.obstacles];
-//    self.dynamicItemBehaviour.density = MAX_DENSITY;
-//    [self.behaviours addObject:self.dynamicItemBehaviour];
 }
 
 
@@ -110,25 +104,14 @@
 
 - (void)onFrameUpdate {
     
-    if (self.touchActive)
-        [self makeLineLayer:self.view.layer lineFromPointA:_redSquare.center toPointB:_touchLocation];
-}
-
--(void)makeLineLayer:(CALayer *)layer lineFromPointA:(CGPoint)pointA toPointB:(CGPoint)pointB {
-    
-    if (_attachmentLine.superlayer)
-        [_attachmentLine removeFromSuperlayer];
-    
-    _attachmentLine = [CAShapeLayer layer];
-    UIBezierPath *linePath=[UIBezierPath bezierPath];
-    [linePath moveToPoint: pointA];
-    [linePath addLineToPoint:pointB];
-    _attachmentLine.path=linePath.CGPath;
-    _attachmentLine.fillColor = nil;
-    _attachmentLine.lineWidth = 3;
-    _attachmentLine.opacity = 1.0;
-    _attachmentLine.strokeColor = [UIColor blueColor].CGColor;
-    [layer addSublayer:_attachmentLine];
+    if (self.touchActive) {
+        if (_attachmentLine.superlayer)
+            [_attachmentLine removeFromSuperlayer];
+        _attachmentLine = [DrawTool makeLineOnLayer:self.view.layer
+                                     lineFromPointA:NSStringFromCGPoint(_redSquare.center)
+                                           toPointB:NSStringFromCGPoint(_touchLocation)
+                                              color:[UIColor blueColor]];
+    }
 }
 
 
