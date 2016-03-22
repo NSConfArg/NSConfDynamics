@@ -10,9 +10,16 @@
 
 @interface MainViewController ()
 
+// Particles animation
 @property (nonatomic, strong) UIFieldBehavior *fieldBehaviour;
 @property (nonatomic, strong) UICollisionBehavior *collisionBehaviour;
 @property (nonatomic, strong) UIPushBehavior *pushBehaviour;
+
+// Menu animation
+//@property (nonatomic, strong) UICollisionBehavior *collisionBehaviour;
+@property (nonatomic, strong) UIPushBehavior *menuPushBehavior;
+@property (nonatomic, strong) UIGravityBehavior *menuGravityBehaviour;
+
 @property (weak, nonatomic) IBOutlet UIButton *pushButton;
 
 @end

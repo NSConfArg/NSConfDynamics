@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61196ED41CA1089D0058F0FE /* BaseContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61196ED31CA1089D0058F0FE /* BaseContainerViewController.m */; };
+		61196ED71CA108B50058F0FE /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61196ED61CA108B50058F0FE /* MenuViewController.m */; };
 		61893BFB1C92423D0003C768 /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893BFA1C92423D0003C768 /* GravityViewController.m */; };
 		61893BFE1C9243360003C768 /* DynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893BFD1C9243360003C768 /* DynamicsViewController.m */; };
 		61893C021C9246440003C768 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893C011C9246440003C768 /* MainViewController.m */; };
 		61893C061C926AAC0003C768 /* SnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893C051C926AAC0003C768 /* SnapViewController.m */; };
+		61E548F51CA1A53D0028A127 /* AttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E548F41CA1A53D0028A127 /* AttachmentViewController.m */; };
 		61FF6DC51C923FD3005C0DC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FF6DC41C923FD3005C0DC5 /* main.m */; };
 		61FF6DC81C923FD3005C0DC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FF6DC71C923FD3005C0DC5 /* AppDelegate.m */; };
 		61FF6DCE1C923FD3005C0DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FF6DCC1C923FD3005C0DC5 /* Main.storyboard */; };
@@ -38,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61196ED21CA1089D0058F0FE /* BaseContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseContainerViewController.h; path = ViewControllers/BaseContainer/BaseContainerViewController.h; sourceTree = "<group>"; };
+		61196ED31CA1089D0058F0FE /* BaseContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseContainerViewController.m; path = ViewControllers/BaseContainer/BaseContainerViewController.m; sourceTree = "<group>"; };
+		61196ED51CA108B50058F0FE /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ViewControllers/Menu/MenuViewController.h; sourceTree = "<group>"; };
+		61196ED61CA108B50058F0FE /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ViewControllers/Menu/MenuViewController.m; sourceTree = "<group>"; };
 		61893BF91C92423D0003C768 /* GravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravityViewController.h; path = ViewControllers/Gravity/GravityViewController.h; sourceTree = "<group>"; };
 		61893BFA1C92423D0003C768 /* GravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GravityViewController.m; path = ViewControllers/Gravity/GravityViewController.m; sourceTree = "<group>"; };
 		61893BFC1C9243360003C768 /* DynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicsViewController.h; path = ViewControllers/DynamicsViewController.h; sourceTree = "<group>"; };
@@ -46,6 +53,8 @@
 		61893C011C9246440003C768 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewControllers/Main/MainViewController.m; sourceTree = "<group>"; };
 		61893C041C926AAC0003C768 /* SnapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnapViewController.h; path = ViewControllers/Snap/SnapViewController.h; sourceTree = "<group>"; };
 		61893C051C926AAC0003C768 /* SnapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnapViewController.m; path = ViewControllers/Snap/SnapViewController.m; sourceTree = "<group>"; };
+		61E548F31CA1A53D0028A127 /* AttachmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentViewController.h; path = ViewControllers/Attachment/AttachmentViewController.h; sourceTree = "<group>"; };
+		61E548F41CA1A53D0028A127 /* AttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttachmentViewController.m; path = ViewControllers/Attachment/AttachmentViewController.m; sourceTree = "<group>"; };
 		61FF6DC01C923FD3005C0DC5 /* NSConfDynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSConfDynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FF6DC41C923FD3005C0DC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61FF6DC61C923FD3005C0DC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,9 +96,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61196ED01CA108200058F0FE /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				61196ED51CA108B50058F0FE /* MenuViewController.h */,
+				61196ED61CA108B50058F0FE /* MenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		61196ED11CA108300058F0FE /* BaseContainer */ = {
+			isa = PBXGroup;
+			children = (
+				61196ED21CA1089D0058F0FE /* BaseContainerViewController.h */,
+				61196ED31CA1089D0058F0FE /* BaseContainerViewController.m */,
+			);
+			name = BaseContainer;
+			sourceTree = "<group>";
+		};
 		61893BF71C9241FB0003C768 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				61E548F21CA1A2FA0028A127 /* Attachments */,
+				61196ED11CA108300058F0FE /* BaseContainer */,
+				61196ED01CA108200058F0FE /* Menu */,
 				61893C031C9269A50003C768 /* Snap */,
 				61893BFF1C9246220003C768 /* Main */,
 				61893BF81C92420C0003C768 /* Gravity */,
@@ -124,6 +154,15 @@
 				61893C051C926AAC0003C768 /* SnapViewController.m */,
 			);
 			name = Snap;
+			sourceTree = "<group>";
+		};
+		61E548F21CA1A2FA0028A127 /* Attachments */ = {
+			isa = PBXGroup;
+			children = (
+				61E548F31CA1A53D0028A127 /* AttachmentViewController.h */,
+				61E548F41CA1A53D0028A127 /* AttachmentViewController.m */,
+			);
+			name = Attachments;
 			sourceTree = "<group>";
 		};
 		61FF6DB71C923FD3005C0DC5 = {
@@ -319,11 +358,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				61893C021C9246440003C768 /* MainViewController.m in Sources */,
+				61196ED71CA108B50058F0FE /* MenuViewController.m in Sources */,
 				61893BFE1C9243360003C768 /* DynamicsViewController.m in Sources */,
 				61FF6DC81C923FD3005C0DC5 /* AppDelegate.m in Sources */,
 				61FF6DC51C923FD3005C0DC5 /* main.m in Sources */,
 				61893C061C926AAC0003C768 /* SnapViewController.m in Sources */,
+				61196ED41CA1089D0058F0FE /* BaseContainerViewController.m in Sources */,
 				61893BFB1C92423D0003C768 /* GravityViewController.m in Sources */,
+				61E548F51CA1A53D0028A127 /* AttachmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MenuViewController : UIViewController
+
+@protocol SideMenuDelegate <NSObject>
+
+- (void)didSelectMenuOptionAtIndex:(NSInteger)index;
+
+@end
+
+
+@interface MenuViewController : UITableViewController
+
+@property (nonatomic, strong) id<SideMenuDelegate> delegate;
 
 @end

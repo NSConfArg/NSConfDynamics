@@ -6,8 +6,18 @@
 //  Copyright © 2016 RodrigoMato. All rights reserved.
 //
 
+#import "MenuViewController.h"
 #import <UIKit/UIKit.h>
 
-@interface BaseContainerViewController : UIViewController
+typedef enum MenuOption {
+    kOption1 = 0,
+    kOption2 = 0,
+    kOption3 = 0,
+    kOption4 = 0,
+}MenuOption;
+
+@interface BaseContainerViewController : UIViewController <UIGestureRecognizerDelegate, SideMenuDelegate>
+
+- (void)didSelectMenuOptionAtIndex:(NSInteger)index;
 
 @end

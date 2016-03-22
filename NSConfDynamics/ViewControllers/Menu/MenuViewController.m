@@ -10,4 +10,16 @@
 
 @implementation MenuViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self.delegate didSelectMenuOptionAtIndex:indexPath.row];
+}
+
+
 @end
