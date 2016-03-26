@@ -534,16 +534,31 @@
                                     <constraint firstAttribute="width" constant="150" id="s5w-Zq-ai3"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BX8-Ir-Kff">
+                                <rect key="frame" x="260" y="8" width="80" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="OrV-fS-RvL"/>
+                                    <constraint firstAttribute="width" constant="80" id="dx2-dR-ghB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="onResetClicked:" destination="vla-7l-xeN" eventType="touchUpInside" id="58y-w5-EaQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JMu-ki-ekx" firstAttribute="centerY" secondItem="M3z-jB-CS6" secondAttribute="centerY" id="1ue-sx-d0D"/>
+                            <constraint firstItem="BX8-Ir-Kff" firstAttribute="top" secondItem="vIo-Ig-9us" secondAttribute="bottom" constant="8" id="GXD-gX-hfh"/>
                             <constraint firstItem="JMu-ki-ekx" firstAttribute="centerX" secondItem="M3z-jB-CS6" secondAttribute="centerX" id="N9p-n8-zBa"/>
+                            <constraint firstItem="BX8-Ir-Kff" firstAttribute="centerX" secondItem="M3z-jB-CS6" secondAttribute="centerX" id="t4E-rM-2gk"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="mainView" destination="JMu-ki-ekx" id="Pjl-bq-TiX"/>
+                        <outlet property="resetButton" destination="BX8-Ir-Kff" id="yEN-1V-SPp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gie-XE-vUo" userLabel="First Responder" sceneMemberID="firstResponder"/>

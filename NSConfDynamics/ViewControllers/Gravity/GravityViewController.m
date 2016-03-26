@@ -21,7 +21,6 @@
 
 @property (nonatomic) CGRect squarePosition;
 
-
 @end
 
 

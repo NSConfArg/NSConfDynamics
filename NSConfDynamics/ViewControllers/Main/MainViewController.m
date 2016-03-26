@@ -82,10 +82,6 @@
         behaviour.translatesReferenceBoundsIntoBoundary = YES;
         [self.behaviours addObject:behaviour];
     }
-//    self.collisionBehaviour = [[UICollisionBehavior alloc] initWithItems:self.items];
-//    self.collisionBehaviour.translatesReferenceBoundsIntoBoundary = YES;
-//    [self.behaviours addObject:self.collisionBehaviour];
-
 }
 
 /**
