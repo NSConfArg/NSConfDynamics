@@ -13,6 +13,11 @@
 		61893BFE1C9243360003C768 /* DynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893BFD1C9243360003C768 /* DynamicsViewController.m */; };
 		61893C021C9246440003C768 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893C011C9246440003C768 /* MainViewController.m */; };
 		61893C061C926AAC0003C768 /* SnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61893C051C926AAC0003C768 /* SnapViewController.m */; };
+		61E461A11CA7BFA900F8043F /* EdgePanTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E461A01CA7BFA900F8043F /* EdgePanTransitionAnimator.m */; };
+		61E461A51CA7C08300F8043F /* CustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E461A41CA7C08300F8043F /* CustomTransitionViewController.m */; };
+		61E461A81CA7C0F200F8043F /* FromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E461A71CA7C0F200F8043F /* FromViewController.m */; };
+		61E461AB1CA7C10100F8043F /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E461AA1CA7C10100F8043F /* ToViewController.m */; };
+		61E461AD1CA8487B00F8043F /* ToViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61E461AC1CA8487B00F8043F /* ToViewController.xib */; };
 		61E548F51CA1A53D0028A127 /* AttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E548F41CA1A53D0028A127 /* AttachmentViewController.m */; };
 		61E548FA1CA1CC3A0028A127 /* SpringBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E548F91CA1CC3A0028A127 /* SpringBehaviour.m */; };
 		61E548FE1CA1CD140028A127 /* CustomAttachmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E548FD1CA1CD140028A127 /* CustomAttachmentController.m */; };
@@ -56,6 +61,15 @@
 		61893C011C9246440003C768 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewControllers/Main/MainViewController.m; sourceTree = "<group>"; };
 		61893C041C926AAC0003C768 /* SnapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnapViewController.h; path = ViewControllers/Snap/SnapViewController.h; sourceTree = "<group>"; };
 		61893C051C926AAC0003C768 /* SnapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnapViewController.m; path = ViewControllers/Snap/SnapViewController.m; sourceTree = "<group>"; };
+		61E4619F1CA7BFA900F8043F /* EdgePanTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdgePanTransitionAnimator.h; path = Transition/EdgePanTransitionAnimator.h; sourceTree = "<group>"; };
+		61E461A01CA7BFA900F8043F /* EdgePanTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EdgePanTransitionAnimator.m; path = Transition/EdgePanTransitionAnimator.m; sourceTree = "<group>"; };
+		61E461A31CA7C08300F8043F /* CustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTransitionViewController.h; path = ViewControllers/CustomTransition/CustomTransitionViewController.h; sourceTree = "<group>"; };
+		61E461A41CA7C08300F8043F /* CustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTransitionViewController.m; path = ViewControllers/CustomTransition/CustomTransitionViewController.m; sourceTree = "<group>"; };
+		61E461A61CA7C0F200F8043F /* FromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FromViewController.h; path = ViewControllers/CustomTransition/FromViewController.h; sourceTree = "<group>"; };
+		61E461A71CA7C0F200F8043F /* FromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FromViewController.m; path = ViewControllers/CustomTransition/FromViewController.m; sourceTree = "<group>"; };
+		61E461A91CA7C10100F8043F /* ToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToViewController.h; path = ViewControllers/CustomTransition/ToViewController.h; sourceTree = "<group>"; };
+		61E461AA1CA7C10100F8043F /* ToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToViewController.m; path = ViewControllers/CustomTransition/ToViewController.m; sourceTree = "<group>"; };
+		61E461AC1CA8487B00F8043F /* ToViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ToViewController.xib; path = ViewControllers/CustomTransition/ToViewController.xib; sourceTree = "<group>"; };
 		61E548F31CA1A53D0028A127 /* AttachmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentViewController.h; path = ViewControllers/Attachment/AttachmentViewController.h; sourceTree = "<group>"; };
 		61E548F41CA1A53D0028A127 /* AttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttachmentViewController.m; path = ViewControllers/Attachment/AttachmentViewController.m; sourceTree = "<group>"; };
 		61E548F81CA1CC3A0028A127 /* SpringBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringBehaviour.h; path = CustomBehaviours/Spring/SpringBehaviour.h; sourceTree = "<group>"; };
@@ -105,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		610498FE1CA7BC4200C2BD1E /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				61E4619F1CA7BFA900F8043F /* EdgePanTransitionAnimator.h */,
+				61E461A01CA7BFA900F8043F /* EdgePanTransitionAnimator.m */,
+			);
+			name = Transition;
+			sourceTree = "<group>";
+		};
 		61196ED01CA108200058F0FE /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +149,7 @@
 		61893BF71C9241FB0003C768 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				61E461A21CA7C04D00F8043F /* CustomTransition */,
 				61E548FB1CA1CCF00028A127 /* CustomAtachment */,
 				61E548F21CA1A2FA0028A127 /* Attachments */,
 				61196ED11CA108300058F0FE /* BaseContainer */,
@@ -164,6 +188,20 @@
 				61893C051C926AAC0003C768 /* SnapViewController.m */,
 			);
 			name = Snap;
+			sourceTree = "<group>";
+		};
+		61E461A21CA7C04D00F8043F /* CustomTransition */ = {
+			isa = PBXGroup;
+			children = (
+				61E461A31CA7C08300F8043F /* CustomTransitionViewController.h */,
+				61E461A41CA7C08300F8043F /* CustomTransitionViewController.m */,
+				61E461A61CA7C0F200F8043F /* FromViewController.h */,
+				61E461A71CA7C0F200F8043F /* FromViewController.m */,
+				61E461A91CA7C10100F8043F /* ToViewController.h */,
+				61E461AA1CA7C10100F8043F /* ToViewController.m */,
+				61E461AC1CA8487B00F8043F /* ToViewController.xib */,
+			);
+			name = CustomTransition;
 			sourceTree = "<group>";
 		};
 		61E548F21CA1A2FA0028A127 /* Attachments */ = {
@@ -224,6 +262,7 @@
 		61FF6DC21C923FD3005C0DC5 /* NSConfDynamics */ = {
 			isa = PBXGroup;
 			children = (
+				610498FE1CA7BC4200C2BD1E /* Transition */,
 				61E548F61CA1CC060028A127 /* CustomBehaviours */,
 				61893BF71C9241FB0003C768 /* ViewControllers */,
 				61FF6DC61C923FD3005C0DC5 /* AppDelegate.h */,
@@ -372,6 +411,7 @@
 				61FF6DD31C923FD3005C0DC5 /* LaunchScreen.storyboard in Resources */,
 				61FF6DD01C923FD3005C0DC5 /* Assets.xcassets in Resources */,
 				61FF6DCE1C923FD3005C0DC5 /* Main.storyboard in Resources */,
+				61E461AD1CA8487B00F8043F /* ToViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,18 +436,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E461A81CA7C0F200F8043F /* FromViewController.m in Sources */,
 				61E548FE1CA1CD140028A127 /* CustomAttachmentController.m in Sources */,
 				61893C021C9246440003C768 /* MainViewController.m in Sources */,
 				61196ED71CA108B50058F0FE /* MenuViewController.m in Sources */,
 				61E548FA1CA1CC3A0028A127 /* SpringBehaviour.m in Sources */,
 				61893BFE1C9243360003C768 /* DynamicsViewController.m in Sources */,
+				61E461A11CA7BFA900F8043F /* EdgePanTransitionAnimator.m in Sources */,
 				61FF6DC81C923FD3005C0DC5 /* AppDelegate.m in Sources */,
 				61FF6DC51C923FD3005C0DC5 /* main.m in Sources */,
 				61893C061C926AAC0003C768 /* SnapViewController.m in Sources */,
 				61196ED41CA1089D0058F0FE /* BaseContainerViewController.m in Sources */,
 				61E549011CA1D7680028A127 /* DrawTool.m in Sources */,
 				61893BFB1C92423D0003C768 /* GravityViewController.m in Sources */,
+				61E461A51CA7C08300F8043F /* CustomTransitionViewController.m in Sources */,
 				61E548F51CA1A53D0028A127 /* AttachmentViewController.m in Sources */,
+				61E461AB1CA7C10100F8043F /* ToViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,7 +39,7 @@
     
     self = [super initWithCoder:aDecoder];
     if (self) {
-        menuSegues = @[@"gravityControllerSegue", @"attachmentControllerSegue", @"snapControllerSegue", @"customBehaviour1Segue"];
+        menuSegues = @[@"gravityControllerSegue", @"attachmentControllerSegue", @"snapControllerSegue", @"customBehaviour1Segue", @"CustomTransitionSegue"];
     }
     return self;
 }
