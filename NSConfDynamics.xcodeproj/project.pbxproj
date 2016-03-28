@@ -84,7 +84,7 @@
 		61E548FD1CA1CD140028A127 /* CustomAttachmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomAttachmentController.m; path = ViewControllers/CustomAttachment/CustomAttachmentController.m; sourceTree = "<group>"; };
 		61E548FF1CA1D7680028A127 /* DrawTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawTool.h; path = Model/DrawTool.h; sourceTree = "<group>"; };
 		61E549001CA1D7680028A127 /* DrawTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawTool.m; path = Model/DrawTool.m; sourceTree = "<group>"; };
-		61FF6DC01C923FD3005C0DC5 /* NSConfDynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSConfDynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61FF6DC01C923FD3005C0DC5 /* Dynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FF6DC41C923FD3005C0DC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61FF6DC61C923FD3005C0DC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		61FF6DC71C923FD3005C0DC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -278,7 +278,7 @@
 		61FF6DC11C923FD3005C0DC5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				61FF6DC01C923FD3005C0DC5 /* NSConfDynamics.app */,
+				61FF6DC01C923FD3005C0DC5 /* Dynamics.app */,
 				61FF6DD91C923FD3005C0DC5 /* NSConfDynamicsTests.xctest */,
 				61FF6DE41C923FD3005C0DC5 /* NSConfDynamicsUITests.xctest */,
 			);
@@ -347,7 +347,7 @@
 			);
 			name = NSConfDynamics;
 			productName = NSConfDynamics;
-			productReference = 61FF6DC01C923FD3005C0DC5 /* NSConfDynamics.app */;
+			productReference = 61FF6DC01C923FD3005C0DC5 /* Dynamics.app */;
 			productType = "com.apple.product-type.application";
 		};
 		61FF6DD81C923FD3005C0DC5 /* NSConfDynamicsTests */ = {
@@ -625,7 +625,7 @@
 				INFOPLIST_FILE = NSConfDynamics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmato.NSConfDynamics;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Dynamics;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -639,7 +639,7 @@
 				INFOPLIST_FILE = NSConfDynamics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmato.NSConfDynamics;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Dynamics;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;

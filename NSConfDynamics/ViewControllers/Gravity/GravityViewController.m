@@ -45,7 +45,6 @@
 - (void)createItems {
     
     // Red Square with tap gesture
-    CGRect localBounds = self.view.bounds;
     CGFloat side = 100;
     self.squarePosition = CGRectMake(10, 10, side, side);
     UIView *redSquare = [[UIView alloc] initWithFrame:self.squarePosition];
