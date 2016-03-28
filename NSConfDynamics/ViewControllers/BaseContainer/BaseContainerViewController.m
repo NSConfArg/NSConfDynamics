@@ -39,7 +39,7 @@
     
     self = [super initWithCoder:aDecoder];
     if (self) {
-        menuSegues = @[@"gravityControllerSegue", @"attachmentControllerSegue", @"snapControllerSegue", @"customBehaviour1Segue", @"CustomTransitionSegue"];
+        menuSegues = @[@"gravityControllerSegue", @"attachmentControllerSegue", @"snapControllerSegue", @"customBehaviour1Segue", @"customSlideSegue", @"CustomTransitionSegue"];
     }
     return self;
 }
@@ -47,6 +47,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addGestureRecognizers];
+    [self.navigationItem.backBarButtonItem setTitle:@""];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

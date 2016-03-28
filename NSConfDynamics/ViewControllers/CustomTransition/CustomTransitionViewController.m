@@ -171,18 +171,12 @@
         self.wasPushed = NO;
         
         if (translationPercent > 0.4) {
-            
             [self.dynamicAnimator removeAllBehaviors];
             [self.interactionController finishInteractiveTransition];
-            
-        } else {
-            
+        } else
             [self.interactionController cancelInteractiveTransition];
-            
-        }
         
         self.interactionController = nil;
-        
     }
 }
 

@@ -18,6 +18,8 @@
 		61E461A81CA7C0F200F8043F /* FromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E461A71CA7C0F200F8043F /* FromViewController.m */; };
 		61E461AB1CA7C10100F8043F /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E461AA1CA7C10100F8043F /* ToViewController.m */; };
 		61E461AD1CA8487B00F8043F /* ToViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61E461AC1CA8487B00F8043F /* ToViewController.xib */; };
+		61E461B21CA8A1A500F8043F /* CustomSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E461B11CA8A1A500F8043F /* CustomSlideViewController.m */; };
+		61E461B61CA8A1E400F8043F /* SlideBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E461B51CA8A1E400F8043F /* SlideBehaviour.m */; };
 		61E548F51CA1A53D0028A127 /* AttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E548F41CA1A53D0028A127 /* AttachmentViewController.m */; };
 		61E548FA1CA1CC3A0028A127 /* SpringBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E548F91CA1CC3A0028A127 /* SpringBehaviour.m */; };
 		61E548FE1CA1CD140028A127 /* CustomAttachmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E548FD1CA1CD140028A127 /* CustomAttachmentController.m */; };
@@ -70,6 +72,10 @@
 		61E461A91CA7C10100F8043F /* ToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToViewController.h; path = ViewControllers/CustomTransition/ToViewController.h; sourceTree = "<group>"; };
 		61E461AA1CA7C10100F8043F /* ToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToViewController.m; path = ViewControllers/CustomTransition/ToViewController.m; sourceTree = "<group>"; };
 		61E461AC1CA8487B00F8043F /* ToViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ToViewController.xib; path = ViewControllers/CustomTransition/ToViewController.xib; sourceTree = "<group>"; };
+		61E461B01CA8A1A500F8043F /* CustomSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSlideViewController.h; path = ViewControllers/CustomSlide/CustomSlideViewController.h; sourceTree = "<group>"; };
+		61E461B11CA8A1A500F8043F /* CustomSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSlideViewController.m; path = ViewControllers/CustomSlide/CustomSlideViewController.m; sourceTree = "<group>"; };
+		61E461B41CA8A1E400F8043F /* SlideBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlideBehaviour.h; path = CustomBehaviours/Slide/SlideBehaviour.h; sourceTree = "<group>"; };
+		61E461B51CA8A1E400F8043F /* SlideBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlideBehaviour.m; path = CustomBehaviours/Slide/SlideBehaviour.m; sourceTree = "<group>"; };
 		61E548F31CA1A53D0028A127 /* AttachmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentViewController.h; path = ViewControllers/Attachment/AttachmentViewController.h; sourceTree = "<group>"; };
 		61E548F41CA1A53D0028A127 /* AttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttachmentViewController.m; path = ViewControllers/Attachment/AttachmentViewController.m; sourceTree = "<group>"; };
 		61E548F81CA1CC3A0028A127 /* SpringBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpringBehaviour.h; path = CustomBehaviours/Spring/SpringBehaviour.h; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 		61893BF71C9241FB0003C768 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				61E461AE1CA89F6B00F8043F /* CustomSlide */,
 				61E461A21CA7C04D00F8043F /* CustomTransition */,
 				61E548FB1CA1CCF00028A127 /* CustomAtachment */,
 				61E548F21CA1A2FA0028A127 /* Attachments */,
@@ -204,6 +211,24 @@
 			name = CustomTransition;
 			sourceTree = "<group>";
 		};
+		61E461AE1CA89F6B00F8043F /* CustomSlide */ = {
+			isa = PBXGroup;
+			children = (
+				61E461B01CA8A1A500F8043F /* CustomSlideViewController.h */,
+				61E461B11CA8A1A500F8043F /* CustomSlideViewController.m */,
+			);
+			name = CustomSlide;
+			sourceTree = "<group>";
+		};
+		61E461B31CA8A1B300F8043F /* SlideBehaviour */ = {
+			isa = PBXGroup;
+			children = (
+				61E461B41CA8A1E400F8043F /* SlideBehaviour.h */,
+				61E461B51CA8A1E400F8043F /* SlideBehaviour.m */,
+			);
+			name = SlideBehaviour;
+			sourceTree = "<group>";
+		};
 		61E548F21CA1A2FA0028A127 /* Attachments */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,18 +241,19 @@
 		61E548F61CA1CC060028A127 /* CustomBehaviours */ = {
 			isa = PBXGroup;
 			children = (
-				61E548F71CA1CC1A0028A127 /* Spring */,
+				61E461B31CA8A1B300F8043F /* SlideBehaviour */,
+				61E548F71CA1CC1A0028A127 /* SpringBehaviour */,
 			);
 			name = CustomBehaviours;
 			sourceTree = "<group>";
 		};
-		61E548F71CA1CC1A0028A127 /* Spring */ = {
+		61E548F71CA1CC1A0028A127 /* SpringBehaviour */ = {
 			isa = PBXGroup;
 			children = (
 				61E548F81CA1CC3A0028A127 /* SpringBehaviour.h */,
 				61E548F91CA1CC3A0028A127 /* SpringBehaviour.m */,
 			);
-			name = Spring;
+			name = SpringBehaviour;
 			sourceTree = "<group>";
 		};
 		61E548FB1CA1CCF00028A127 /* CustomAtachment */ = {
@@ -437,9 +463,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				61E461A81CA7C0F200F8043F /* FromViewController.m in Sources */,
+				61E461B61CA8A1E400F8043F /* SlideBehaviour.m in Sources */,
 				61E548FE1CA1CD140028A127 /* CustomAttachmentController.m in Sources */,
 				61893C021C9246440003C768 /* MainViewController.m in Sources */,
 				61196ED71CA108B50058F0FE /* MenuViewController.m in Sources */,
+				61E461B21CA8A1A500F8043F /* CustomSlideViewController.m in Sources */,
 				61E548FA1CA1CC3A0028A127 /* SpringBehaviour.m in Sources */,
 				61893BFE1C9243360003C768 /* DynamicsViewController.m in Sources */,
 				61E461A11CA7BFA900F8043F /* EdgePanTransitionAnimator.m in Sources */,

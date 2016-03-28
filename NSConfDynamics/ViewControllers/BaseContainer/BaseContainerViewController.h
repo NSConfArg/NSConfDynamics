@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "DynamicsViewController.h"
 #import <UIKit/UIKit.h>
 
 typedef enum MenuOption {
@@ -16,7 +17,7 @@ typedef enum MenuOption {
     kOption4 = 0,
 }MenuOption;
 
-@interface BaseContainerViewController : UIViewController <UIGestureRecognizerDelegate, SideMenuDelegate>
+@interface BaseContainerViewController : DynamicsViewController <UIGestureRecognizerDelegate, SideMenuDelegate>
 
 - (void)didSelectMenuOptionAtIndex:(NSInteger)index;
 
