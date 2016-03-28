@@ -25,7 +25,6 @@
 @property (nonatomic, strong) UIPanGestureRecognizer            *panGestureRecognizer;
 
 // Dynamics
-@property (nonatomic, strong) UIDynamicAnimator *animator;
 @property (nonatomic, strong) UIGravityBehavior *gravityBehaviour;
 @property (nonatomic, strong) UIPushBehavior *pushBehavior;
 @property (nonatomic, strong) UIAttachmentBehavior *panAttachmentBehaviour;
@@ -58,6 +57,7 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
+    self.menuOpen = NO;
     [UIView animateWithDuration:0.5 animations:^{
         self.mainContainer.frame = CGRectMake(0, 0, self.mainContainer.frame.size.width, self.mainContainer.frame.size.height);
     }];
@@ -96,7 +96,7 @@
     
     // Modify Main View elasticity
     self.dynamicItemBehaviour = [[UIDynamicItemBehavior alloc] initWithItems:@[self.mainContainer]];
-    self.dynamicItemBehaviour.elasticity = 0.45f;
+    self.dynamicItemBehaviour.elasticity = 0.3f;
     [self.animator addBehavior:self.dynamicItemBehaviour];
 }
 

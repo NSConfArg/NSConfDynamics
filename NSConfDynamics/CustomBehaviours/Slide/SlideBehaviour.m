@@ -26,7 +26,7 @@
         
         // Add Collision Behaviour with bounds as boundary + insets
         UICollisionBehavior * collision = [[UICollisionBehavior alloc] initWithItems:@[item]];
-        [collision setTranslatesReferenceBoundsIntoBoundaryWithInsets:UIEdgeInsetsMake(-item.superview.bounds.size.height, 0, 0, 0)];
+        [collision setTranslatesReferenceBoundsIntoBoundaryWithInsets:UIEdgeInsetsMake(-item.superview.bounds.size.height*3/4, 0, 0, 0)];
         collision.collisionMode = UICollisionBehaviorModeBoundaries;
         [self addChildBehavior:collision];
         
@@ -58,8 +58,6 @@
     } else if (pan.state == UIGestureRecognizerStateEnded || pan.state == UIGestureRecognizerStateCancelled || pan.state == UIGestureRecognizerStateFailed) {
         
         [self removeChildBehavior:self.attachmentBehaviour];
-        // Set the velocity to the view when the gesture cancells
-        [self.dynamicItemBehavior addLinearVelocity:[pan velocityInView:pan.view.superview] forItem:pan.view];
     }
 }
 

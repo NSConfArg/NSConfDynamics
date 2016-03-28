@@ -31,6 +31,31 @@
 @implementation CustomTransitionViewController
 
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setTitle:@"Custom Transition"];
+    
+    self.dynamicAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    
+    // Screen edge pan gesture
+    UIScreenEdgePanGestureRecognizer *leftEdgeGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleEdgeGesture:)];
+    leftEdgeGestureRecognizer.edges = UIRectEdgeLeft;
+    [self.view addGestureRecognizer:leftEdgeGestureRecognizer];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    // Add drop shadow to the left edge
+    self.containerView.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.containerView.layer.shadowOffset = CGSizeMake(-3.0, 0.0);
+    self.containerView.layer.shadowOpacity = 0.7;
+    self.containerView.layer.shadowRadius = 4.0;
+}
+
+- (BOOL)shouldAutorotate {
+    return  NO;
+}
 - (EdgePanTransitionAnimator*)transitionAnimator {
     
     if (!_transitionAnimator) {
@@ -102,36 +127,6 @@
     }
 }
 
-
-#pragma mark - UIViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.dynamicAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
-    
-//    // Disableedge pan back action
-//    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)])
-//        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-    
-    UIScreenEdgePanGestureRecognizer *leftEdgeGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleEdgeGesture:)];
-    leftEdgeGestureRecognizer.edges = UIRectEdgeLeft;
-    [self.view addGestureRecognizer:leftEdgeGestureRecognizer];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    // Add drop shadow to the left edge
-    self.containerView.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.containerView.layer.shadowOffset = CGSizeMake(-3.0, 0.0);
-    self.containerView.layer.shadowOpacity = 0.7;
-    self.containerView.layer.shadowRadius = 4.0;
-}
-
-- (BOOL)shouldAutorotate {
-    return  NO;
-}
 
 # pragma mark - Transitioning animator delegate
 

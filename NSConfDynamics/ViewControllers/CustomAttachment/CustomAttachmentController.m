@@ -27,7 +27,9 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    [self setTitle:@"Custom Attachment"];
     
+    // Frame Updates
     CADisplayLink *displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(onFrameUpdate)];
     [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 }

@@ -215,6 +215,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QpP-vH-7OK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.065586120770000006" green="0.59799085409999997" blue="0.56913500019999996" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.065586120768709427" green="0.59799085405661367" blue="0.56913500022280539" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -280,7 +281,7 @@
                         <segue destination="fNU-C8-rJN" kind="show" identifier="customBehaviour1Segue" id="vg7-NR-0iY"/>
                         <segue destination="vla-7l-xeN" kind="show" identifier="snapControllerSegue" id="2qE-an-oBL"/>
                         <segue destination="x8r-bd-DNz" kind="presentation" identifier="CustomTransitionSegue" id="esc-E2-TkW"/>
-                        <segue destination="5yo-Id-9Ry" kind="show" identifier="customSlideSegue" id="3h9-dy-Jhi"/>
+                        <segue destination="IfO-dm-tpQ" kind="show" identifier="customSlideSegue" id="hfW-Rs-aUe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvN-nd-OCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -652,24 +653,6 @@
             </objects>
             <point key="canvasLocation" x="336" y="2399"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="gJ2-xo-NB6">
-            <objects>
-                <viewController id="5yo-Id-9Ry" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="owW-6L-QRy"/>
-                        <viewControllerLayoutGuide type="bottom" id="gj5-AO-qv2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ngE-M6-3qb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VRJ-dN-3SM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="328" y="3247"/>
-        </scene>
         <!--From View Controller-->
         <scene sceneID="kVE-5q-xTS">
             <objects>
@@ -710,8 +693,102 @@
             </objects>
             <point key="canvasLocation" x="1031" y="2399"/>
         </scene>
+        <!--Custom Slide View Controller-->
+        <scene sceneID="kp4-Dt-PpM">
+            <objects>
+                <viewController id="IfO-dm-tpQ" customClass="CustomSlideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jYS-gI-MJ3"/>
+                        <viewControllerLayoutGuide type="bottom" id="eqi-Ag-FkK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="twK-cX-z3C">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljw-dD-kfq" userLabel="Dynamic View">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4dP-BL-zXk">
+                                        <rect key="frame" x="172" y="120" width="257" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="8Pr-8H-rKm"/>
+                                            <constraint firstAttribute="width" constant="257" id="yPr-rw-UGo"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Gestures"/>
+                                            <segment title="Dynamics"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.70483783953420742" green="0.71002019853147569" blue="0.72556727552328049" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="onSegmentChanged:" destination="IfO-dm-tpQ" eventType="valueChanged" id="NcK-ze-Ssx"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk0-5Q-5Xp">
+                                        <rect key="frame" x="226" y="497" width="149" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="IQc-3v-KG1"/>
+                                            <constraint firstAttribute="width" constant="149" id="uDu-65-FsD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.70483783950000001" green="0.71002019849999998" blue="0.7255672755" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowUp" translatesAutoresizingMaskIntoConstraints="NO" id="OyT-cN-o1T">
+                                        <rect key="frame" x="281" y="459" width="38" height="52"/>
+                                        <color key="tintColor" red="0.70483783950000001" green="0.71002019849999998" blue="0.7255672755" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="38" id="4XP-HN-Rhy"/>
+                                            <constraint firstAttribute="height" constant="52" id="IBa-TB-qJU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.60250666239999995" green="0.15183345349999999" blue="0.14602165019999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="OyT-cN-o1T" secondAttribute="bottom" constant="25" id="61x-9J-win"/>
+                                    <constraint firstItem="4dP-BL-zXk" firstAttribute="top" secondItem="ljw-dD-kfq" secondAttribute="top" constant="120" id="Rg2-G4-i6O"/>
+                                    <constraint firstAttribute="bottom" secondItem="gk0-5Q-5Xp" secondAttribute="bottom" constant="18" id="XWf-nA-iVg"/>
+                                    <constraint firstItem="4dP-BL-zXk" firstAttribute="centerX" secondItem="ljw-dD-kfq" secondAttribute="centerX" id="Ym1-rk-IUZ"/>
+                                    <constraint firstItem="OyT-cN-o1T" firstAttribute="centerX" secondItem="ljw-dD-kfq" secondAttribute="centerX" id="atC-wJ-cQZ"/>
+                                    <constraint firstItem="gk0-5Q-5Xp" firstAttribute="centerX" secondItem="ljw-dD-kfq" secondAttribute="centerX" id="tzn-ff-beE"/>
+                                    <constraint firstItem="4dP-BL-zXk" firstAttribute="centerY" secondItem="ljw-dD-kfq" secondAttribute="centerY" id="zQZ-mv-jP5"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zQZ-mv-jP5"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ljw-dD-kfq" firstAttribute="leading" secondItem="twK-cX-z3C" secondAttribute="leading" id="ITz-2w-92T"/>
+                            <constraint firstItem="eqi-Ag-FkK" firstAttribute="top" secondItem="ljw-dD-kfq" secondAttribute="bottom" id="WNl-ms-ngq"/>
+                            <constraint firstItem="ljw-dD-kfq" firstAttribute="top" secondItem="jYS-gI-MJ3" secondAttribute="bottom" id="eKw-21-D0c"/>
+                            <constraint firstAttribute="trailing" secondItem="ljw-dD-kfq" secondAttribute="trailing" id="uRV-4r-OXu"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DLg-Sn-mnH" appends="YES" id="nQj-jq-vox"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="panGesture" destination="DLg-Sn-mnH" id="Rf0-EW-P1G"/>
+                        <outlet property="segmentControl" destination="4dP-BL-zXk" id="8qo-1E-RGJ"/>
+                        <outlet property="slidingView" destination="ljw-dD-kfq" id="t3P-iB-sXB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Slx-MA-mQx" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="DLg-Sn-mnH">
+                    <connections>
+                        <action selector="onPan:" destination="IfO-dm-tpQ" id="eWG-Bu-BPi"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="336" y="3192"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="arrowUp" width="192" height="192"/>
         <image name="white_close_icon" width="40" height="38"/>
     </resources>
 </document>
