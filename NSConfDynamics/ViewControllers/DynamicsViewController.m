@@ -17,6 +17,7 @@
 
         _behaviours = [NSMutableArray new];
         _items = [NSMutableArray new];
+        _debugEnabled = NO;
     }
     return self;
 }
@@ -37,7 +38,30 @@
                                                                              style:self.navigationItem.backBarButtonItem.style
                                                                             target:nil
                                                                             action:nil];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"bug_icon"]
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(toggleDebug)];
+}
 
+- (void)toggleDebug {
+    
+    // Remove all behaviours and items
+    [self.animator removeAllBehaviors];
+    self.behaviours = [NSMutableArray new];
+    for (UIView *view in self.items)
+        [view removeFromSuperview];
+    self.items = [NSMutableArray new];
+    
+    // Toggle debug mode
+    self.debugEnabled = !self.debugEnabled;
+    [self.animator setValue:@(self.debugEnabled) forKeyPath:@"debugEnabled"];
+    
+    // Add Behaviours and Items again
+    [self createItems];
+    [self createBehaviours];
+    for (UIDynamicBehavior *behaviour in self.behaviours)
+        [self.animator addBehavior:behaviour];
 }
 
 #pragma mark - overriden methods

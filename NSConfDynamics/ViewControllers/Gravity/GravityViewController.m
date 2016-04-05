@@ -66,6 +66,7 @@
     // Collisions
     self.collisionBehavior = [[UICollisionBehavior alloc] initWithItems:self.items];
     self.collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
+    [self toggleObstacles:self.segmentedControl.selectedSegmentIndex];
     [self.behaviours addObject:self.collisionBehavior];
     
     // Dynamic Items (properties)
@@ -77,13 +78,12 @@
 - (void)toggleObstacles:(BOOL)toggleValue {
     
     for (UIView *view in self.obstacles) {
-        if (toggleValue)
+        if (!toggleValue)
             [self.collisionBehavior removeItem:view];
         else
             [self.collisionBehavior addItem:view];
     }
 }
-
 
 #pragma mark - Callbacks
 
@@ -95,11 +95,9 @@
     square.frame = self.squarePosition;
     
     // Show/hide obstacles
-    for (UIView *view in self.obstacles) {
-        
+    for (UIView *view in self.obstacles)
         [view setHidden:(control.selectedSegmentIndex == FREE)];
-        [self toggleObstacles:(control.selectedSegmentIndex == FREE)];
-    }
+    [self toggleObstacles:(control.selectedSegmentIndex == OBSTACLES)];
     
     // Remove Behaviours
     [self.animator removeAllBehaviors];

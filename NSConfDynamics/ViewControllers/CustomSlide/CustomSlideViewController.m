@@ -6,6 +6,7 @@
 //  Copyright © 2016 RodrigoMato. All rights reserved.
 //
 
+#define USE_DYNAMICS    1
 #import "SlideBehaviour.h"
 #import "CustomSlideViewController.h"
 
@@ -22,6 +23,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"Custom Slide"];
+}
+
+- (void)toggleDebug {
+    [super toggleDebug];
+    if (self.segmentControl.selectedSegmentIndex == USE_DYNAMICS)
+        [self addSlideBehaviour];
 }
 
 #pragma mark - Back Slide View
@@ -65,12 +72,12 @@
 
 - (IBAction)onSegmentChanged:(id)sender {
     
-    if (self.segmentControl.selectedSegmentIndex == 0) {
+    if (self.segmentControl.selectedSegmentIndex != USE_DYNAMICS) {
         
         self.panGesture.enabled = YES;
         [self.animator removeAllBehaviors];
         
-    } else if (self.segmentControl.selectedSegmentIndex == 1) {
+    } else if (self.segmentControl.selectedSegmentIndex == USE_DYNAMICS) {
         
         self.panGesture.enabled = NO;
         [self addSlideBehaviour];

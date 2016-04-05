@@ -13,10 +13,12 @@
 @property (nonatomic, strong) UIDynamicAnimator *animator;
 @property (nonatomic, strong) NSMutableArray    *behaviours;
 @property (nonatomic, strong) NSMutableArray    *items;
+@property (nonatomic) BOOL debugEnabled;
 
 @property (nonatomic, strong) IBOutletCollection(UIView) NSArray    *obstacles;
 
 - (void)createItems;
 - (void)createBehaviours;
+- (void)toggleDebug;
 
 @end

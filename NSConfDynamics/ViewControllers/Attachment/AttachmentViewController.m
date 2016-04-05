@@ -6,7 +6,7 @@
 //  Copyright © 2016 RodrigoMato. All rights reserved.
 //
 
-#define ACTIVE_GRAVITY  0
+#define ACTIVE_GRAVITY  1
 #import "DrawTool.h"
 #import "AttachmentViewController.h"
 
@@ -23,6 +23,7 @@
 @property (nonatomic, strong) UIDynamicItemBehavior *dynamicItemBehaviour;
 
 @property (nonatomic) CGRect squarePosition;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 
 @end
@@ -54,7 +55,7 @@
     
     // Red Square
     CGFloat side = 100;
-    self.squarePosition = CGRectMake(10, 10, side, side);
+    self.squarePosition = CGRectMake(self.view.bounds.size.width/2-side/2, self.view.bounds.size.height/2-side/2, side, side);
     _redSquare = [[UIView alloc] initWithFrame:self.squarePosition];
     [_redSquare setBackgroundColor:[UIColor redColor]];
     [self.view addSubview:_redSquare];
@@ -65,7 +66,7 @@
 
     // Gravity
     self.gravityBehavior = [[UIGravityBehavior alloc] initWithItems:self.items];
-    [self.animator addBehavior:self.gravityBehavior];
+//    [self.animator addBehavior:self.gravityBehavior];
 
     // Collisions
     self.collisionBehavior = [[UICollisionBehavior alloc] initWithItems:self.items];
@@ -73,6 +74,11 @@
                                             fromPoint:CGPointMake(0, CGRectGetHeight(self.view.frame))
                                               toPoint:CGPointMake(CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
     [self.animator addBehavior:self.collisionBehavior];
+}
+
+- (void)toggleDebug {
+    [self.segmentedControl setSelectedSegmentIndex:0];
+    [super toggleDebug];
 }
 
 

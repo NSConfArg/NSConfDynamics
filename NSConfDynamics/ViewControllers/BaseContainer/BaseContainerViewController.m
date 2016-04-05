@@ -18,6 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *menuContainer;
 @property (weak, nonatomic) IBOutlet UIView *mainContainer;
+@property (weak, nonatomic) IBOutlet MainViewController *mainController;
 @property (nonatomic, getter=isMenuOpen) BOOL menuOpen;
 
 // Gesture Recognizers
@@ -154,6 +155,9 @@
     }
 }
 
+- (void)toggleDebug {
+    [self.mainController toggleDebug];
+}
 
 #pragma mark - Menu Delegate
 
@@ -188,13 +192,20 @@
     
 }
 
+#pragma mark - Navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"menuEmbedSegue"]) {
         MenuViewController *menuController  = segue.destinationViewController;
         menuController.delegate = self;
     }
+    
+    if ([segue.identifier isEqualToString:@"mainEmbedSegue"]) {
+        self.mainController = (MainViewController*)segue.destinationViewController;
+    }
 }
+
 
 @end
 

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "61FF6DBF1C923FD3005C0DC5"
-               BuildableName = "NSConfDynamics.app"
+               BuildableName = "Dynamics.app"
                BlueprintName = "NSConfDynamics"
                ReferencedContainer = "container:NSConfDynamics.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "61FF6DBF1C923FD3005C0DC5"
-            BuildableName = "NSConfDynamics.app"
+            BuildableName = "Dynamics.app"
             BlueprintName = "NSConfDynamics"
             ReferencedContainer = "container:NSConfDynamics.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "61FF6DBF1C923FD3005C0DC5"
-            BuildableName = "NSConfDynamics.app"
+            BuildableName = "Dynamics.app"
             BlueprintName = "NSConfDynamics"
             ReferencedContainer = "container:NSConfDynamics.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "61FF6DBF1C923FD3005C0DC5"
-            BuildableName = "NSConfDynamics.app"
+            BuildableName = "Dynamics.app"
             BlueprintName = "NSConfDynamics"
             ReferencedContainer = "container:NSConfDynamics.xcodeproj">
          </BuildableReference>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NFu-df-kaA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NFu-df-kaA">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -249,7 +249,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Dd-Y9-f8Q" userLabel="Main Container View">
                                 <rect key="frame" x="0.0" y="0.0" width="601" height="536"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="embed" id="lqc-Wf-BpL"/>
+                                    <segue destination="BYZ-38-t0r" kind="embed" identifier="mainEmbedSegue" id="lqc-Wf-BpL"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -475,8 +475,8 @@
                                     <constraint firstAttribute="height" constant="28" id="pLP-5e-cjO"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Gravity"/>
                                     <segment title="No Gravity"/>
+                                    <segment title="Gravity"/>
                                 </segments>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -503,6 +503,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="N8o-kD-gxZ" id="pkU-to-1ck"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yc0-kw-pgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -656,8 +659,11 @@
         <!--From View Controller-->
         <scene sceneID="kVE-5q-xTS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LQl-Vs-rde" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="tsL-V4-JqI" customClass="FromViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RUj-Rb-gDp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rju-xI-e4N"/>
+                    </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="AqD-fj-ueD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -690,6 +696,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LQl-Vs-rde" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1031" y="2399"/>
         </scene>
