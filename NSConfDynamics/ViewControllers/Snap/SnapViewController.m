@@ -149,8 +149,20 @@
 }
 
 - (void)toggleDebug {
-    [super toggleDebug];
-    [self createSnapingViews];
+    
+    // Remove all behaviours and items
+    [self.animator removeAllBehaviors];
+    self.behaviours = [NSMutableArray new];
+    
+    // Toggle debug mode
+    self.debugEnabled = !self.debugEnabled;
+    [self.animator setValue:@(self.debugEnabled) forKeyPath:@"debugEnabled"];
+    
+    // Add Behaviours and Items again
+    [self createItems];
+    [self createBehaviours];
+    for (UIDynamicBehavior *behaviour in self.behaviours)
+        [self.animator addBehavior:behaviour];
 }
 
 - (IBAction)onResetClicked:(id)sender {
