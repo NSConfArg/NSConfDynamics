@@ -148,6 +148,11 @@
         [self.animator addBehavior:_redSphereSnapBehavior];
 }
 
+- (void)toggleDebug {
+    [super toggleDebug];
+    [self createSnapingViews];
+}
+
 - (IBAction)onResetClicked:(id)sender {
 
     for (UIView *view in self.items) {

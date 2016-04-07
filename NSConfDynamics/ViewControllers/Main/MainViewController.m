@@ -92,8 +92,8 @@
     for (UIView *view in self.items) {
         
         UIPushBehavior *push = [[UIPushBehavior alloc]initWithItems:@[view] mode:UIPushBehaviorModeInstantaneous];
-        [push setAngle:(arc4random() % 90)];
-        [push setMagnitude:2];
+        [push setAngle:(arc4random() % 360)];
+        [push setMagnitude:(arc4random()%2+1)];
         [self.animator addBehavior:push];
     }
 }
